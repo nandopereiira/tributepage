@@ -1,0 +1,775 @@
+
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    padding:0px;  
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 54%, rgba(204,204,204,1) 100%);
+    font-size: 16px;
+}
+header {    
+    height:80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    z-index: 1000; 
+    position: absolute;
+    top:0;  
+}
+.container {
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+}
+/* LOGO APPLE */
+.logo {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 10%;   
+}
+.logo img {
+    width: 35px;
+    opacity: 0.6;
+    transition:all 0.7s ease-in-out;
+}
+.logo img:hover {
+    opacity: 9;
+}
+/* FIM DO LOGO APPLE */
+#menu {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: none;
+    transition: all .5s ease-in-out; 
+}
+nav ul {
+    list-style: none; 
+    display: flex; 
+    transition: all 0.5 linear; 
+    margin-top: 20px;
+    margin-right: 50px;
+}
+nav li {
+    margin-right: 20px;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}    
+nav li a {
+    padding:7px 7px 7px 10px;
+    text-decoration: none;
+    color: #414141;
+    font-weight: 520;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    text-shadow: 0 0 0.9px #363636;
+    transition: all 0.3s linear;        
+    } 
+nav li.active a {
+    background: #1d1d1d;
+    opacity: 0.9; 
+    color: #fff;
+    text-shadow: 0 1px 0.9px #f8f7f7;
+}   
+nav li a:hover {
+    color: #fff;
+    text-shadow: 0 1px 0.9px #f8f7f7;
+    background:#1d1d1d;
+    background: rgb(21, 98, 241);
+    opacity: 0.8;       
+    box-shadow: 0 5px 5px 0 rgba(29, 30, 43, 0.27);
+} 
+.menuMobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 40px 0 0;
+    cursor: pointer;
+}
+.menuMobile div {
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 3px;
+    background: rgb(22, 22, 22);
+    margin: 8px;
+}  
+/* Sessão do Banner IMAGEM */
+#banner {
+    top: 0px;
+    left:0;
+    background-image: url('../image/stevejobs_banner.png');
+    background-position:center;
+    background-size: cover;
+    height:119vh;
+    min-height: 500px;
+    position:relative;
+    display: flex;
+    justify-content: center;    
+    box-shadow: 0px 5px 8px rgb(173, 173, 173);
+}
+/* TÍTULO E CITAÇÃO */
+.banner_citacao {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    max-height: 400px; 
+    justify-content:center;    
+    margin-left: 15px;
+    margin-top: 160px;
+    text-align: center;
+    padding: 5px 20px;
+}
+h1 {
+    display: flex;
+    font-size: 70px;
+    justify-content: center; 
+    color: #1c1e20;
+    text-shadow: 0 2px 7 #ccc;
+    font-family: 'GothamMedium' Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom:0px;
+}
+h2 {
+    font-size: 30px;
+    color: #1c1e20;;
+    text-shadow: 0 2px 7 #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace;
+    opacity: 0.8;
+    margin-top: -5px;
+}
+.aspas-start, .aspas-end {
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(21, 98, 241);
+}
+#citacao {
+    color:#292929;
+    text-shadow: 0 2px 2 rgb(163, 163, 163); 
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin: -20px 0 -20px 0;
+    padding: 0 15px;
+}
+#citacao:hover, h2:hover {
+    opacity: 1;
+    transition:all 0.9s linear; 
+    text-shadow: 0 0 0.9px #1f1f1f;
+}
+.autor {
+    color:rgb(21, 98, 241);
+    font-weight: 900;
+    font-size: 14px;
+}
+.autor2 {
+    color:#8a8888;
+    font-weight: 800;
+    margin-top: -12px;
+    font-size: 14px;
+} 
+/* CONTEÚDO GERAL  */
+.body_main {
+    margin-top: 20px;
+    color:#444444; 
+    display: flex;
+    flex-direction: column;
+}
+/* CSS TITULOS DAS PÁGINAS */
+.title_box {
+    padding-left:0px;
+    transition:all 0.5s linear;
+}
+.title_box:hover {
+    padding-left:3px;
+}
+#bio, #timeline, #morte, #galeria, #biografia {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color:#000;
+    font-weight: bold;
+    border-bottom: 1px solid #e7e6e6;
+    margin-top: 30px; 
+    margin-left: 15px;  
+    transition: all 0.5s linear;
+}
+#bio:hover, #timeline:hover, #morte:hover, #galeria:hover, #biografia:hover {
+    color:rgb(21, 98, 241);
+    border-bottom: 1px solid rgb(121, 121, 121);
+}
+/* DIV do CONTEÚDO DE CADA TíTULO */
+.main_resume {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.5s linear;
+}
+.main_resume {
+    color:#474747  
+}
+.main_resume:hover {
+    color:#000; 
+}
+.main_resume li {
+    margin-top: 05px;
+}
+.quadrado {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    margin-top: 37px;
+    margin-left: -10px;
+    transition: all .5s linear;
+    border-top: 3px solid rgb(21, 98, 241);
+    border-right:3px solid rgb(21, 98, 241);
+    transform: translateX(10px) rotate(48deg) translateY(5px)
+}
+.quadrado:hover {
+    border-top: 5px solid rgb(21, 98, 241);
+    border-right:5px solid rgb(21, 98, 241);
+    transform: translateX(13px) rotate(48deg) translateY(5px);
+    background-color: rgb(21, 98, 241);
+    width: 10px;
+    height: 10px;
+}
+.title_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gallery {
+    height: auto;
+    background-color: #2b2b2c;
+    box-shadow: 5px 5px 9px #000;
+}
+#galeria {    
+    display: flex;  
+    flex-direction: column;  
+    font-size: 40px;
+    color: #fff;
+    background-color: rgb(21, 98, 241);
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 0px;
+    transition: all 0.5s linear;
+    text-align: center;
+    font-weight: 900;
+    border: 5px solid rgb(21, 98, 241);
+    border-radius: 8px;
+}
+#galeria:hover {
+    color: rgb(21, 98, 241);
+    background-color: #2b2b2c;
+    border: 5px solid rgb(21, 98, 241);
+}
+.gallery_box {
+    display: flex;
+    flex-direction: row;  
+    margin: 40px 0px;
+    flex:1;
+}
+#gallery_1, #gallery_2, #gallery_3 {
+    flex: 1;
+    margin: 0px 5px;
+    height: 180px;
+    background-color: #adadad;
+    transition: all 0.5s linear;
+    border: 3px solid #ccc;
+    box-shadow: 2px 2px 9px #000;
+}
+#gallery_1 {
+    background-color: cornflowerblue;
+    background-image: url('../image/Stephen\ Apple.jfif');
+    background-position:center;
+    background-size: cover;   
+    display: flex;
+    justify-content: center;
+}
+#gallery_2 {
+    background-color: cornflowerblue;
+    background-image: url('../image/Steven\ Jobs\ Gallery.jpeg');
+    background-position:center;
+    background-size: cover;   
+    display: flex;
+    justify-content: center;
+}
+#gallery_3 {
+    background-color: cornflowerblue;
+    background-image: url('../image/steve-jobs-macintosh.jpg');
+    background-position:center;
+    background-size: cover;    
+    display: flex;
+    justify-content: center;
+}
+#gallery_1:hover, #gallery_2:hover, #gallery_3:hover {
+    border: 3px solid cornflowerblue;
+    box-shadow: 5px 5px 9px #000;
+    opacity: 0.7;
+    margin-top: -5px;
+} 
+.photo {
+    display: flex;  
+    flex-direction: column; 
+}
+
+/* RODAPÉ */
+footer {
+    background-color: rgb(22, 22, 22);
+    padding: 5px;
+    color: rgb(226, 226, 225);
+    box-shadow: -0px -2px 10px #000;
+    height: auto;
+}
+.rodape {
+    display: flex;
+}
+.biografia {
+    display: flex;
+    flex-direction: column;
+}
+.end {
+    font-size: 20px;
+    padding: 90px 0px;
+    color:#2e2d2d 
+}
+.end a {
+    color: rgb(21, 98, 241);
+    text-decoration: none;
+}
+.end a:hover {
+    border-bottom: 1px solid rgb(21, 98, 241);
+}
+.container.rodape {
+    justify-content: space-between;
+    display:flex;
+}
+.credit {
+    margin: 20px 0;
+    color: rgb(141, 141, 141);
+}
+.credit a {
+    color:rgb(84, 137, 235);
+    text-decoration: none;
+}
+.credit a:hover {
+    color: rgb(21, 98, 241);
+}
+.box_social {
+    margin: 15px 20px 0 0;
+    display:flex;
+    justify-content: space-around;
+}
+.social img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.4;
+    padding: 0 5px;
+    transition:all 0.7s ease-in-out;
+}
+.social img:hover {
+    opacity: 1;
+    margin-top:-5px;
+}
+/* FIM DO RODAPÉ */
+/* BOTÃO DE VOLTAR AO TOPO */
+.scrollbutton {
+    width: 40px;
+    height: 40px;
+    border-radius:30px;   
+    position: fixed;
+    right: 20px;
+    bottom:80px;
+    z-index:999px;    
+    cursor:pointer;
+    display:none;
+    text-align: center;
+    padding: 9px 0 0 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s;
+    background-color: rgb(21, 98, 241);
+    border: solid 3px rgb(21, 98, 241);
+}
+.scrollbutton a {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.scrollbutton:hover {
+    background: none;
+    color: #191919;
+}
+/* RESPONSIVIDADE DA PÁGINA */
+@media (min-width:600px) and (max-width:1000px) { 
+    .menuMobile {
+        display: block; 
+        transition: all 0.5 linear;     
+    }    
+    #menu nav {
+        position: absolute;
+        top: 60px;
+        right:0;
+        width:50vw;
+        height: 100vh;
+        z-index:999;
+        display:none;
+        background: #1d1d1d;
+        opacity: 0.9;
+        transition: all ease .5s;
+        overflow-x:hidden;
+        overflow-y:auto;
+        justify-content: center;
+        transition: all ease .5s;
+    } 
+    #menu nav ul {          
+        transition: all ease .5s;
+        flex-direction: column;  
+    }  
+    nav li {
+        padding: 30px 0;
+        cursor: pointer;
+        justify-content: center; 
+        transition: all 0.5 linear;  
+        list-style:none;    
+        display: block;    
+        text-align: left;
+    }
+    nav li a {        
+        color:rgb(241, 241, 241);
+        transition: all 0.5 linear;
+        text-align: left;
+    }
+    .banner_citacao {
+        width: 40vw;
+    } 
+    h1 {
+        font-size: 50px;        
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .container {
+        width: 100vw;
+        display: flex;
+    }
+    .main_resume {
+        padding: 20px;
+        display: flex;
+    }    
+    .quadrado{
+        margin-left: 10px;   
+        padding:0px;
+        margin-top: 42px;
+    }
+    #bio, #timeline, #morte, #galeria, #biografia {      
+        margin-left: 25px;   
+        padding: 5px 5px 5px 0px;
+    }
+    #bio:hover, #timeline:hover, #morte:hover, #galeria:hover, #biografia:hover {
+        margin-left: 5px;   
+        padding: 5px 5px 5px 0px;
+    }
+    #galeria {
+        display: flex;
+        margin: 15px auto;   
+        width: 80%;  
+        justify-content: center;   
+    }
+    .gallery_box {
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        padding: 5px 5px;
+        margin: 0px auto;
+    }
+    .gallery {
+        height: auto;
+        width: auto;
+        justify-content: center;
+    }
+    #gallery_1, #gallery_2, #gallery_3 {
+        flex: 1;   
+        min-height: 280px;
+        min-width: 80vw;
+        padding: 5px 5px; 
+        margin: 5px 0px;
+        margin-left: 0px; 
+        justify-content: center;
+        background-position:center;
+        align-items: center;
+    }    
+    .end {
+        padding: 70px 20px;
+    }
+    .credit {
+        margin-left: 20px;
+        padding: 3px 0px;
+    } 
+    .scrollbutton {
+        bottom:95px
+    }     
+}
+@media (max-width:600px) {
+    .container {
+        width: 100vw;
+        display: flex;
+    }    
+    header {
+        height: auto;
+    }
+    .menuMobile {
+        display: block; 
+        transition: all 0.5 linear;     
+    } 
+    #menu nav {
+        position: absolute;
+        top: 60px;
+        right:0;
+        width:50vw;
+        height: 100vh;
+        z-index:999;
+        display:none;
+        background: #1d1d1d;
+        opacity: 0.9;
+        transition: all ease .5s;
+        overflow-x:hidden;
+        overflow-y:auto;
+        justify-content: center;
+    } 
+    #menu nav ul {          
+        transition: all ease .5s;
+        flex-direction: column;    
+    }  
+    nav li {
+        padding: 40px 0;
+        cursor: pointer;
+        justify-content: center; 
+        transition: all 0.5 linear;  
+        list-style:none;    
+        display: block;
+        text-align: left;
+    }
+    nav li a {        
+        color:rgb(241, 241, 241);
+        transition: all 0.5 linear;
+        text-align: left;
+    }    
+    .main_resume {
+        padding: 20px;
+        display: flex;
+    }
+    .banner_citacao {
+        width: 40vw;
+    }
+    .banner_citacao h1 {
+        font-size: 45px;
+    }
+    .banner_citacao h2 {
+        font-size: 20px;
+    }    
+    .quadrado{
+        margin-left: 5px;   
+        padding:0px;
+        margin-top: 42px;
+    }
+    #bio, #timeline, #morte, #galeria, #biografia {      
+        margin-left: 25px;   
+        padding: 5px 5px 5px 0px;
+    }
+    #bio:hover, #timeline:hover, #morte:hover, #galeria:hover, #biografia:hover {
+        margin-left: 5px;   
+        padding: 5px 5px 5px 0px;
+    }  
+    .gallery_box {
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        padding: 5px 5px;
+        margin: 0px auto;
+    }
+    .gallery {
+        height: auto;
+        width: auto;
+        justify-content: center;
+    }
+    #galeria {
+        margin: 20px;
+    }
+    #gallery_1, #gallery_2, #gallery_3 {
+        flex-direction: column;
+        flex: none;
+        height: 180px;
+        width: 300px;
+        padding: 5px 5px; 
+        margin: 5px 0px;
+        margin-left: 0px; 
+        justify-content: center;
+        background-position:center;
+        align-items: center;
+    }    
+    .end {
+        padding: 70px 20px;
+    }
+    .credit {
+        margin-left: 20px;
+        padding: 3px 0px;
+    }
+    .container.rodape {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .scrollbutton {
+        bottom:120px;
+        opacity: 0.7;
+    }
+}
+@media (max-width:460px) {
+    .container {
+        width: 100vw;
+        display: flex;
+    }    
+    header {
+        height: auto;
+    }
+    .menuMobile {
+        display: block; 
+        transition: all 0.5 linear;     
+    } 
+    #menu nav {
+        position: absolute;
+        top: 60px;
+        right:0;
+        width:200px;
+        height: 100vh;
+        z-index:999;
+        display:none;
+        background: #1d1d1d;
+        opacity: 0.9;
+        transition: all ease .5s;
+        overflow-x:hidden;
+        overflow-y:auto;
+        justify-content: center;
+    } 
+    #menu nav ul {          
+        transition: all ease .5s;
+        flex-direction: column;    
+    }  
+    nav li {
+        padding: 40px 0;
+        cursor: pointer;
+        justify-content: center; 
+        transition: all 0.5 linear;  
+        list-style:none;    
+        display: block;
+        text-align: left;
+    }
+    nav li a {        
+        color:rgb(241, 241, 241);
+        transition: all 0.5 linear;
+        text-align: left;
+    } 
+    .banner_citacao {
+        justify-content: flex-start;
+        text-align: center;
+        color:cornsilk;
+        width:80vw;
+        max-height: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        background: #010101;
+        opacity: 0.7;
+    } 
+    h1{
+        color: rgb(21, 98, 241);
+    }
+    h2, #citacao,.autor2 {
+        color:cornsilk;
+    }  
+    #gallery_1, #gallery_2, #gallery_3 {
+        height: 90px;
+        width: 80vw;
+    }
+    .quadrado{
+        margin-left: 10px;   
+    }
+    #bio, #timeline, #morte, #galeria, #biografia {      
+        margin-left: 25px;
+    } 
+}
+@media (max-width:350px) {
+    .container {
+        width: 100vw;
+        display: flex;
+    }    
+    header {
+        height: auto;
+    }
+    .menuMobile {
+        display: block; 
+        transition: all 0.5 linear;  
+        margin-right: 10px;   
+    } 
+    #menu nav {
+        position: absolute;
+        top: 60px;
+        right:0;
+        width:200px;
+        height: 100vh;
+        z-index:999;
+        display:none;
+        background: #1d1d1d;
+        opacity: 0.9;
+        transition: all ease .5s;
+        overflow-x:hidden;
+        overflow-y:auto;
+        justify-content: center;
+    } 
+    #menu nav ul {          
+        transition: all ease .5s;
+        flex-direction: column;    
+    }  
+    nav li {
+        padding: 40px 0;
+        cursor: pointer;
+        justify-content: center; 
+        transition: all 0.5 linear;  
+        list-style:none;    
+        display: block;
+        text-align: left;
+    }
+    nav li a {        
+        color:rgb(241, 241, 241);
+        transition: all 0.5 linear;
+        text-align: left;
+    } 
+    .banner_headline {
+        margin-left: 0px;
+        max-width: 190px;
+        left: calc (15%-10px);
+    }
+    #frases {
+        color:#000;
+        font-size: 14px;
+        max-width: 190px; 
+    }
+    #gallery_1, #gallery_2, #gallery_3 {
+        height: 90px;
+        width: 80vw;
+    }
+}
