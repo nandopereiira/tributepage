@@ -6,10 +6,10 @@
 <h1 align="center">Tribute Page Html CSS</h1>
 
 <p align="center">Página de tributo homenageando Steve Jobs, construida com Html,
-Css e Javascript, Site TOTALMENTE responsivo, e com Layout simples e elegante.
+Css e Javascript, página TOTALMENTE responsiva, e com Layout simples e elegante.
 Projeto feito em desafio do curso Full Stack ministrado por Bonieky Lacerda <br/><br/>
 Diferencial do Projeto: <br/>
-  ✔️Menu Responsivel feito com Javascript,
+  ✔️Menu Responsivo feito com Javascript,
   ✔️Botão Flutuante em JavaScript,
   ✔️Responsividade em todas Telas. </p>
 <br/>
