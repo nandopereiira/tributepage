@@ -13,7 +13,7 @@ Diferencial do Projeto: <br/>
   ✔️Botão Flutuante em JavaScript,
   ✔️Responsividade em todas Telas. </p>
 <br/>
-🚀 <p>Link do Projeto: <a color="#ff0000" href="https://nandopereiira.github.io/tributepage/">Tribute Page</p>
+ <p>🚀 Link do Projeto: <a color="#ff0000" href="https://nandopereiira.github.io/tributepage/">Tribute Page</p>
 
 ### Responsividade 100% em todas Telas / Mobile
 <a href="" align="center">
@@ -54,7 +54,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### ✉️ Contato
 
 Feito com muito amor 💗 por <a href="https://www.linkedin.com/in/fernando-pereira-008a18115/" target="_blank">Fernando Pereira</a>
+
 ⭐SE GOSTOU DO PROJETO OU TE AJUDOU DE ALGUMA MANEIRA DEIXA UMA ESTRELA E ME SEGUE NAS REDES SOCIAS!
+
 🤝Vamos trocar códigos e fazer aquele Networking!
 
 Só Fracassa quem Desiste💪!!BORA CODAR!!
